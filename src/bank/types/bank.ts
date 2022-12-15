@@ -73,7 +73,7 @@ export default class Bank {
             console.log(branch.getCustomers().map(customer => ({
                 name: customer.getName(), 
                 transactions: customer.getTransactions().map(transaction => 
-                    `${transaction.amount} || ${transaction.date.toDateString()}`)
+                    `Amount: ${transaction.amount}, Date: ${transaction.date.toDateString()}`)
                 })
             ));
         } else {

@@ -17,6 +17,7 @@ arizonaBank.findBranchByName("bank")
 arizonaBank.findBranchByName("sun")
 
 arizonaBank.addCustomer(westBranch, customer1)
+//arizonaBank.addCustomer(westBranch, customer2) //Just Checking
 arizonaBank.addCustomer(westBranch, customer3)
 arizonaBank.addCustomer(sunBranch, customer1)
 arizonaBank.addCustomer(sunBranch, customer2)
