@@ -27,10 +27,10 @@ const main = async () => {
      * Return an array
      */
     const findProductsByText = (search: string) => {
-        products.filter(products => products.title === search)
+      return products.filter(products => products.title.toLowerCase().includes(search.toLowerCase()))
     }
     const foundProducts = findProductsByText("shirt")
-    //console.log(foundProducts) //expect to see an array of all found products
+    console.log(foundProducts) //expect to see an array of all found products
 
     const testPush1 = users.push(
         {
@@ -70,10 +70,10 @@ const main = async () => {
         }
     )
 
-    // console.log(testPush1) // expect to see 0
-    // console.log(testPush2) // expect to see 1
+    console.log(testPush1) // expect to see 0
+    console.log(testPush2) // expect to see 1
 
-    // console.log(users) // expect too see 2 more users added in the end of array
+    //console.log(users) // expect too see 2 more users added in the end of array
 
 }
 
